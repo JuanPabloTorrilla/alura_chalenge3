@@ -42,14 +42,15 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(270deg,black, white);
+    background: linear-gradient(270deg,black 25%, white);
     border-bottom: 1px solid #ff00bc;
     background-position: right;
     background-repeat: no-repeat;
-    background-size: 89%;
+    background-size: 91%;
     position: fixed;
     width: 100%;
-    top:0%;
+    top: 0%;
+    font-size: 1.2rem;
 }
 .banner{
     box-shadow: inset 0px 0px 16px 20px #000000e0;
