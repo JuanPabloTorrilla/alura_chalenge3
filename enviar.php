@@ -1,21 +1,25 @@
 <?php
-$nombre = $_POST[nombre]
-$email = $_POST[email]
-$mensaje = $_POST[mensaje]
+// Guardar los datos recibidos en variables:
+$nombre = $_POST['nombre'];
+$email = $_POST['email'];
+$mensaje = $_POST['mensaje'];
+// Definir la dirección de destino:
+$dest = "juan1309@hotmail.com"; 
+ 
+// Estas son cabeceras que se usan para evitar que el correo llegue a SPAM:
+$headers = "From: $nombre $email\r\n";
+$headers .= "X-Mailer: PHP5\n";
+$headers .= 'MIME-Version: 1.0' . "\n";
+$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+ 
+// Aqui definimos el asunto y armamos el cuerpo del mensaje
+$cuerpo = "Nombre: ".$nombre."<br>";
+$cuerpo .= "Email: ".$email."<br>";
+$cuerpo .= "Mensaje: ".$mensaje;
 
-$header = 'From: ' . $email . " \r\n";
-$header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
-$header .= "Mime-Version: 1.0 \r\n";
-$header .= "Content-Type: text/plain";
-
-$mensaje = "Este mensaje fue enviado por " . $nombre . "\r\n";
-$mensaje .= "Su E-mail es " . $email . " \r\n";
-$mensaje .= "Su mensaje es " . $mensaje " \r\n";
-$mensaje .= "Enviado el " . date('d/m/Y' , time());
-
-$para = 'juan1309@hotmail.com';
-$asunto = 'Asunto del mensaje';
-
-mail($para, $asunto, utf8_decode($mensaje), $header);
-
-header("Location:index.html");
+// Esta es una pequena validación, que solo envie el correo si todas las variables tiene algo de contenido:
+if($nombre != '' && $email != '' && $mensaje != ''){
+    mail($dest,$cuerpo,$headers); //ENVIAR!
+    header("Location:index.html")
+}
+?>
