@@ -1,0 +1,300 @@
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    background-color: #4444446c;
+}
+
+::-webkit-scrollbar:vertical {
+    width:10px;
+}
+
+::-webkit-scrollbar-button:increment,::-webkit-scrollbar-button {
+    display: none;
+} 
+
+::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(173, 173, 173);
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(102, 99, 99);
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+::-webkit-scrollbar-thumb:active{
+    background-color: #444;
+}
+
+body{
+    background-image:url(../images/wallpaperbetter.com_1920x1080.jpg) ;
+    animation: alternar 170s ease-in-out infinite;
+    background-size: cover;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(270deg,black, white);
+    border-bottom: 1px solid #ff00bc;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 89%;
+    position: fixed;
+    width: 100%;
+    top:0%;
+}
+.banner{
+    box-shadow: inset 0px 0px 16px 20px #000000e0;
+    margin: 70.38px 0 0 0;
+}
+.banner__img{
+    width: -webkit-fill-available;
+    box-shadow: -6px 20px 20px 0px;
+    position: relative;
+    z-index: -10;
+}
+.menu__lista{
+    list-style-type: none;
+}
+#logo{
+    width: 150px;
+}
+.menu__link {
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    font-family: sans-serif;
+}
+
+.menu__link:hover, .menu__link.activo {
+    border-bottom: 2px solid #0073e6;
+}
+main{
+    font-family: 'Courier New', Courier, monospace;
+}
+@keyframes alternar {
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
+}
+
+section{
+    background: #00000073;
+    border-radius: 15px;
+    padding: 2%;
+    margin-bottom: 56px;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "presentacion"
+    "acerca"
+    "skills"
+    "hobbies"
+    "formacion"
+    "proyectos"
+    "contacto";
+    color: beige;
+    
+}
+.presentacion{
+    grid-area: presentacion;   
+    width: 50%;
+    margin-top: 4%;
+}
+.presentacion__descripcion{
+    margin: 2% 0;
+}
+.acerca{
+    grid-area: acerca;
+}
+.section__titulo{
+    font-size: 2rem;
+    margin: 0 0 4%;
+    text-align: center;
+    text-shadow: -5px -3px 3px #ffb5b559;
+    background: #8e97b759;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    box-shadow: 7px 5px 11px 6px #461b3b;
+}
+#skills{
+    
+}
+.skills{
+    grid-area: skills;
+}
+.skills__contenedor__titulo{
+    text-align: center;
+    border-bottom: 1px solid #ffffff78;
+}
+.skils__contenedor{
+    display: flex;
+    text-align: center;
+    margin: 2%;
+    justify-content: space-evenly;
+}
+.skill__borde{
+    
+}
+.skill__card{
+    background: #5fcced6b;
+    width: 11rem;
+    height: 11rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1% 2%;
+    border-radius: 15px;
+    padding: 1%;
+    border-left: 3px solid #e90dba;
+    border-top: 1px solid #ff0052d6;
+}
+.skill_image{
+    width: 110px;
+    margin: 10% 0 0 0;
+}
+#hobbies{
+    
+}
+.hobbies{
+    grid-area: hobbies;
+}
+.formacion{
+    grid-area: formacion;
+}
+.formacion__contenedor{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.formacion__card{
+    text-align: center;
+    width: 32%;
+    margin: 1%;
+    padding: 1%;
+    border-radius: 21px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    box-shadow: 7px 7px 4px 0px #ffffff99;
+    background: linear-gradient(156deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 25%, rgba(0,212,255,1) 100%);
+    transition: 1s;
+}
+    .formacion__card:hover{
+        background: linear-gradient(328deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 25%, rgba(0,212,255,1) 100%);
+        box-shadow: 7px 7px 15px #ffffff;
+        animation: formation .3s;
+    } 
+    
+    @keyframes formation {
+        0%{background: linear-gradient(156deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 25%, rgba(0,212,255,1) 100%);}
+        20%{background: linear-gradient(121deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 25%, rgba(0,212,255,1) 100%);}
+        30%{background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 25%, rgba(0,212,255,1) 100%);}
+        50%{background: linear-gradient(50deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 25%, rgba(0,212,255,1) 100%);}
+        65%{background: linear-gradient(24deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 25%, rgba(0,212,255,1) 100%);}
+        85%{background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 25%, rgba(0,212,255,1) 100%);}
+        100%{background: linear-gradient(328deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 25%, rgba(0,212,255,1) 100%);}
+    }
+a{
+    color: #467e9fb0;
+}
+.img_formacion{
+    height: 140px;
+}
+#img_formacion_alura{
+    height: auto;
+    background: #ffffffb8;
+    border-radius: 10px;
+    margin: 13% auto;
+    width: 100%;
+}
+.proyectos{
+    grid-area: proyectos;
+}
+.proyecto{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0;
+    border-bottom: 2px solid;
+    align-items: center;
+    text-align: center;
+}
+.proyecto:nth-child(odd){
+    flex-direction: row-reverse;
+}
+.proyecto__titulo{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 20% 0 0;
+}
+.proyecto_info{
+    padding: 1%;
+}
+.proyecto_imagen{
+    width: 50%;
+    border-radius: 15px;
+    box-shadow: -1px 1px 20px 8px #000000d1;
+}
+button{
+    width: 162px;
+    background-color: #0000004a;
+    border: none;
+    border-radius: 10px;
+    height: 43px;
+    color: #bdbcbc;
+    font-size: 1rem;
+    transition: .2s;
+    font-weight: bold;
+}
+button:hover{
+    transform: scale(1.08);
+}
+button:active{
+    background-color: #88888865;
+}
+.proyecto__botones{
+    margin: 12% 0;
+}
+.contacto{
+    background: linear-gradient(0deg, rgba(0,0,0,1) 30%, rgba(74,74,74,1) 70%, rgba(255, 255, 255, 0) 100%);
+}
+.formulario__contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+}
+.form-label{
+    border-radius: 5px;
+    background: #00ff371f;
+    color: #ffeaea;
+    transition: .2s;
+    font-size: 1.3rem;
+    width: 21rem;
+}
+.form-label:focus{
+    background: #1df809;
+    color: #444;
+}
+::placeholder{
+    color:#ffeaea
+}
+#mensaje{
+height: 13rem;
+resize: none;
+}
+#form-boton{
+    border: 1px solid;
+}

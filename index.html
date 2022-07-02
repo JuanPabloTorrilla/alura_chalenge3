@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style/style.css" rel="stylesheet">
+    <link href="style/reset.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b5d72683f8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <img src="images/Logo.png" id="logo">
+        <nav class="menu">
+            <ul class="menu__lista">
+                <li class="menu__item">
+                    <a class="menu__link activo" href="#">
+                        <i class="fas fa-user"></i>
+                        Sobre mí</a>
+                    <a class="menu__link" href="#skills">
+                        <i class="fas fa-tools"></i>
+                        Skills</a>
+                    <a class="menu__link" href="#hobbies">
+                        <i class="fas fa-gamepad"></i>
+                        Hobbies
+                    </a>
+                    <a class="menu__link" href="#formacion">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        Formación
+                    </a>
+                    <a class="menu__link" href="#proyectos">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        Proyectos
+                    </a>
+                    <a class="menu__link" href="#contacto">
+                        <i class="fas fa-address-book"></i>
+                        Contacto
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="banner">  
+            <img class="banner__img" src="images/banner.png">
+        </div>
+        <div class="content">
+            <section class="presentacion" id="presentacion">
+                <h2 class="presentacion__titulo">Hola! Soy Juan Pablo Torrilla Picerno</h2>
+                <h4 class="presentacion__descripcion">Me dedico al desarrollo de páginas Web y a la implementación de sistemas de gestión de calidad.</h4>
+                
+                <ul class="lista-redes">
+                    <li class="redes">
+                        <a class="red" href="#">
+                            <i class="fab fa-github-square"></i>
+                        
+                        </a>
+                        <a class="red" href="#">
+                            <i class="fab fa-linkedin"></i>                       
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="acerca" id="acerca">
+                <h2 class="acerca__titulo">Sobre mí</h2>
+                <p>Nací en Buenos Aires, Argentina, donde resido actualmente. Soy una persona en búsqueda de conocimiento y de desafíos que me permitan crecer y desarrollar mis habilidades. Actualmente me encuentro implementando y manteniendo sistemas de gestión de calidad bajo los estándares ISO 9001. También estoy comenzando a dar mis primeros pasos en el desarrollo Front End.</p>
+                <div id="skills"></div>
+            </section>
+            <section class="skills" >
+                <h2 class="section__titulo">Skills</h2>
+                <h4 class="skills__contenedor__titulo">Hard Skills</h4>
+                <div class="skils__contenedor">
+                        <div class="skill__card">
+                            <h5 class="skill__card__title">HTML5</h5>
+                            <img src="images/html_logo.png" class="skill_image">
+                        </div>
+                        <div class="skill__card">
+                            <h5 class="skill__card__title">CSS3</h5>
+                            <img src="images/css_logo.png" class="skill_image">
+                        </div>
+                        <div class="skill__card">
+                            <h5 class="skil__card__title">JavaScript</h5>
+                            <img src="images/js_logo.png" class="skill_image">
+                        </div>
+                        <div class="skill__card">
+                            <h5 class="skil__card__title">MS Office</h5>
+                            <img src="images/office_logo.png" class="skill_image" id="office">
+                        </div>
+                </div>
+                <h4 class="skills__contenedor__titulo">Soft Skills</h4>
+                <div class="skils__contenedor">
+                    <div class="skill__borde">
+                        <div class="skill__card">
+                            <h5 class="skil__card__title">Liderazgo y gestión de equipos</h5>
+                            <img src="images/liderazgo.png" class="skill_image">
+                        </div>
+                    </div>
+                    <div class="skill__borde">
+                        <div class="skill__card">
+                            <h5 class="skil__card__title">Creatividad e innovación</h5>
+                            <img src="images/creatividad.png" class="skill_image">
+                        </div>
+                    </div>
+                    <div class="skill__borde">
+                        <div class="skill__card">
+                            <h5 class="skil__card__title">Adaptabilidad y flexibilidad</h5>
+                            <img src="images/adaptabilidad.png" class="skill_image">
+                        </div>
+                    </div>
+                    <div class="skill__borde">
+                        <div class="skill__card">
+                            <h5 class="skil__card__title">Productividad y gestión del tiempo</h5>
+                            <img src="images/gestion.png" class="skill_image">
+                        </div>
+                    </div>
+                </div>
+                <div id="hobbies"></div>
+            </section>
+            <section class="hobbies">
+                <h2 class="section__titulo">Hobbies</h2>
+                <div class="skils__contenedor">
+                    <div class="skill__card">
+                        <h5 class="skill__card__title">Tocar la guitarra</h5>
+                        <img src="images/guitar_logo.png" class="skill_image">
+                    </div>
+                    <div class="skill__card">
+                        <h5 class="skill__card__title">Programar</h5>
+                        <img src="images/programacion_logo.png" class="skill_image">
+                    </div>
+                    <div class="skill__card">
+                        <h5 class="skil__card__title">Videojuegos</h5>
+                        <img src="images/videojuegos_logo.png" class="skill_image">
+                    </div>
+                    <div class="skill__card">
+                        <h5 class="skil__card__title">Cocinar</h5>
+                        <img src="images/cocina_logo.png" class="skill_image">
+                    </div>
+                </div>
+                <div id="formacion"></div>
+            </section>
+            <section class="formacion">
+                <h2 class="section__titulo">Formación</h2>
+                <div class="formacion__contenedor">
+                    <div class="formacion__card">
+                        <h5 class="card__title">Técnico Superior en Seguridad e Higiene del Trabajo</h5>
+                        <p class="descripcion">ISFDyT N°83</p>
+                        <a href="https://drive.google.com/file/d/15hAlMiTwC-tVoVSHzFTXNPLnAZPS1KGM/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                            <img src="images/logo_83.png" alt="" class="img_formacion">
+                            <p>Ver certificado</p>
+                        </a>
+                    </div>
+                    <div class="formacion__card">
+                        <h5 class="card__title">Auditor Líder en Sistemas de Gestión de Calidad</h5>
+                        <p class="descripcion">IRAM</p>
+                        <a href="https://drive.google.com/file/d/1WahGc7qMa4C4r7D2yXC8Bk-dx38CBrko/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                            <img src="images/logo_iram.png" alt="" class="img_formacion">
+                            <p>Ver certificado</p>
+                        </a>
+                    </div>
+                    <div class="formacion__card">
+                        <h5 class="card__title">Desarrollador FrontEnd</h5>
+                        <p class="descripcion">Alura - Programa ONE</p>
+                        <a href="https://app.aluracursos.com/user/juan1309" target="_blank" rel="noopener noreferrer">
+                            <img src="images/logo_alura.png" alt="" class="img_formacion" id="img_formacion_alura">
+                            <p>Ver certificado</p>
+                        </a>                   
+                    </div>
+                </div>
+                <div id="proyectos"></div>
+            </section>
+            <section class="proyectos">
+                <h2 class="section__titulo">Proyectos</h2>
+                <div class="proyecto">
+                    <div class="proyecto_info">
+                        <div class="proyecto__titulo">Encriptador de texto</div>
+                        <div class="proyecto__descripcion">Challenge #1 del Programa ONE de Alura</div>
+                        <div class="proyecto__botones">
+                            <button class="proyecto__repo" onclick="location.href='https://github.com/JuanPabloTorrilla/Alura_ONE-Challenge_1'">
+                                <i class="fa-brands fa-git-alt"></i>
+                                Repositorio</button>
+                            <button class="proyecto__demo" onclick="location.href='https://juanpablotorrilla.github.io/Alura_ONE-Challenge_1/'">
+                                <i class="fa-solid fa-eye"></i>
+                                Ver demo</button>
+                        </div>      
+                    </div>
+                    <img class="proyecto_imagen" src="images/proyeto_encriptador.png">  
+                </div>
+                <div class="proyecto">
+                    <div class="proyecto_info">
+                        <div class="proyecto__titulo">Juego del ahorcado</div>
+                        <div class="proyecto__descripcion">Challenge #2 del Programa ONE de Alura</div>
+                        <div class="proyecto__botones">
+                            <button class="proyecto__repo" onclick="location.href='https://github.com/JuanPabloTorrilla/alura_challenge2'">
+                                <i class="fa-brands fa-git-alt"></i>
+                                Repositorio</button>
+                            <button class="proyecto__demo" onclick="location.href='https://juanpablotorrilla.github.io/alura_challenge2/'">
+                                <i class="fa-solid fa-eye"></i>
+                                Ver demo</button>
+                        </div>      
+                    </div>
+                    <img class="proyecto_imagen" src="images/proyecto_ahorcado.png">
+                </div>
+                <div class="proyecto">
+                    <div class="proyecto_info">
+                        <div class="proyecto__titulo">Alura store</div>
+                        <div class="proyecto__descripcion">Desarrollo web de una store de juegos y apps</div>
+                        <div class="proyecto__botones">
+                            <button class="proyecto__repo" onclick="location.href='https://github.com/JuanPabloTorrilla/Alura_ONE-Challenge_1'">
+                                <i class="fa-brands fa-git-alt"></i>
+                                Repositorio</button>
+                            <button class="proyecto__demo" onclick="location.href='https://github.com/JuanPabloTorrilla/Alura_ONE-Challenge_1'">
+                                <i class="fa-solid fa-eye"></i>
+                                Ver demo</button>
+                        </div>                       
+                    </div>
+                    <img class="proyecto_imagen" src="images/proyecto_store.png">
+                </div>
+                <div id="contacto"></div>
+            </section>
+            <section class="contacto">
+                <h2 class="section__titulo">Contacto</h2>
+                <form class="formulario__contacto" action="enviar.php" method="post">
+                        <input class="form-label" type="text" name="nombre" placeholder="Nombre">
+                        <input class="form-label" type="email" name="email" placeholder="E-mail">
+                        <textarea class="form-label" id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
+                    <button type="submit" id="form-boton">Enviar</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="script/fontawesome.all.min.js"></script>
+</body>
+</html>
