@@ -31,4 +31,3 @@ function validarForm(){
 }
 
 boton_form.addEventListener('click', validarForm);
-document.querySelector('.formulario__contacto').addEventListener('submit', function(event){event.preventDefault()})

@@ -219,23 +219,23 @@
             </section>
             <section class="contacto">
                 <h2 class="section__titulo">Contacto</h2>
-                <form class="formulario__contacto" method="post">
+                <form class="formulario__contacto" action="https://formsubmit.co/juan1309@hotmail.com" method="post">
                     <label>
                         <div class="error" id="nombre_error"></div>    
-                        <input class="form-input" id="nombre" type="text" name="nombre" placeholder="Nombre">
+                        <input class="form-input" id="nombre" type="text" name="nombre" placeholder="Nombre" required>
                         *
                     </label>
                     <label>
                         <div class="error" id="email_error"></div>
-                        <input class="form-input" id="email" type="email" name="email" placeholder="E-mail">
+                        <input class="form-input" id="email" type="email" name="email" placeholder="E-mail" required>
                         *
                     </label>
                     <label>
                         <div class="error" id="mensaje_error"></div>       
-                        <textarea class="form-input" id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
+                        <textarea class="form-input" id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
                         *
                     </label>
-                    <button id="form-boton">Enviar</button>
+                    <button type="submit" id="form-boton">Enviar</button>
                 </form>
             </section>
         </div>
