@@ -42,15 +42,14 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(270deg,black 25%, white);
+    background: linear-gradient(270deg,black, white);
     border-bottom: 1px solid #ff00bc;
     background-position: right;
     background-repeat: no-repeat;
-    background-size: 91%;
+    background-size: 89%;
     position: fixed;
     width: 100%;
-    top: 0%;
-    font-size: 1.2rem;
+    top:0%;
 }
 .banner{
     box-shadow: inset 0px 0px 16px 20px #000000e0;
@@ -277,7 +276,7 @@ button:active{
     align-items: center;
     row-gap: 1rem;
 }
-.form-label{
+.form-input{
     border-radius: 5px;
     background: #00ff371f;
     color: #ffeaea;
@@ -285,7 +284,7 @@ button:active{
     font-size: 1.3rem;
     width: 21rem;
 }
-.form-label:focus{
+.form-input:focus{
     background: #1df809;
     color: #444;
 }
@@ -298,4 +297,7 @@ resize: none;
 }
 #form-boton{
     border: 1px solid;
+}
+.error{
+    margin-top: 1%;
 }
