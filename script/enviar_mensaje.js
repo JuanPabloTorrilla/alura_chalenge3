@@ -24,10 +24,8 @@ function validarForm(){
         errorNombre.innerHTML = "";
         errorEmail.innerHTML = "";
         errorMensaje.innerHTML = "";
-        nombre.value = "";
-        email.value = "";
-        mensaje.value = "";
-        alert("Su mensaje ha sido enviado.")};
+        
+    };
 }
 
 boton_form.addEventListener('click', validarForm);
