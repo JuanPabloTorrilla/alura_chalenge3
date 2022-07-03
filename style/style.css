@@ -42,11 +42,11 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(270deg,black, white);
+    background: linear-gradient(270deg,black 25%, white);
     border-bottom: 1px solid #ff00bc;
     background-position: right;
     background-repeat: no-repeat;
-    background-size: 89%;
+    background-size: 94%;
     position: fixed;
     width: 100%;
     top:0%;
@@ -300,4 +300,7 @@ resize: none;
 }
 .error{
     margin-top: 1%;
+}
+label{
+    color: red;
 }

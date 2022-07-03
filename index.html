@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -219,11 +219,23 @@
             </section>
             <section class="contacto">
                 <h2 class="section__titulo">Contacto</h2>
-                <form class="formulario__contacto" action="enviar.php" method="post">
-                        <input class="form-label" type="text" name="nombre" placeholder="Nombre">
-                        <input class="form-label" type="email" name="email" placeholder="E-mail">
-                        <textarea class="form-label" id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
-                    <button type="submit" id="form-boton">Enviar</button>
+                <form class="formulario__contacto" method="post">
+                    <label>
+                        <div class="error" id="nombre_error"></div>    
+                        <input class="form-input" id="nombre" type="text" name="nombre" placeholder="Nombre">
+                        *
+                    </label>
+                    <label>
+                        <div class="error" id="email_error"></div>
+                        <input class="form-input" id="email" type="email" name="email" placeholder="E-mail">
+                        *
+                    </label>
+                    <label>
+                        <div class="error" id="mensaje_error"></div>       
+                        <textarea class="form-input" id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
+                        *
+                    </label>
+                    <button id="form-boton">Enviar</button>
                 </form>
             </section>
         </div>
@@ -232,5 +244,6 @@
 
     </footer>
     <script src="script/fontawesome.all.min.js"></script>
+    <script src="script/enviar_mensaje.js"></script>
 </body>
 </html>
