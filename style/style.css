@@ -46,7 +46,7 @@ header{
     border-bottom: 1px solid #ff00bc;
     background-position: right;
     background-repeat: no-repeat;
-    background-size: 94%;
+    background-size: 100%;
     position: fixed;
     width: 100%;
     top:0%;
@@ -126,6 +126,20 @@ section{
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
     box-shadow: 7px 5px 11px 6px #461b3b;
+}
+#cv{
+    width: 1.6rem;
+}
+.redes{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+}
+.red{
+    font-size: 1.6rem;
+    margin: 0 1%;
 }
 #skills{
     
@@ -283,6 +297,7 @@ button:active{
     transition: .2s;
     font-size: 1.3rem;
     width: 21rem;
+    margin-right: 1%;
 }
 .form-input:focus{
     background: #1df809;
@@ -302,5 +317,7 @@ resize: none;
     margin-top: 1%;
 }
 label{
+    display: flex;
     color: red;
+    align-items: baseline;
 }
